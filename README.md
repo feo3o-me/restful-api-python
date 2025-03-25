@@ -17,7 +17,7 @@ http://localhost:1234/test
 Retorna "OK" para sinalizar que a conexão está funcionando.
 ```
 ```
-["POST"] -> Body ->
+["POST"] -> Body -> raw
 http://localhost:1234/user
 Inserir os parâmetros ["email", "name", "password"]
 Se o usuário já existir ele retornará "USER ALREADY EXISTS"
