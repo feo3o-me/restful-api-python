@@ -33,7 +33,7 @@ def search_user_by_domain():
 def add_user():
     for fld in ['email', 'name', 'password']:
         if fld not in request.json:
-            return {"eorr": "Bad request"}, 400
+            return {"error": "Bad request"}, 400
         
     for user in users:
         if user["email"] == request.json['email']:
